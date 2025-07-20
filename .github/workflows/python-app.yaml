@@ -23,16 +23,7 @@ jobs:
       with:
         python-version: '3.x'
 
-    # Step 3: Upgrade pip, setuptools, and wheel
-    - name: Upgrade pip, setuptools, and wheel
-      run: |
-        python -m pip install --upgrade pip
-        pip install --upgrade setuptools wheel
 
-    # Step 4: Install dependencies
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
 
     # Step 5: Run Python script or tests
     - name: Run Python script
